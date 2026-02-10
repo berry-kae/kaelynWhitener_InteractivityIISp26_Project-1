@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<p>hello</p>
+<link rel="stylesheet" href="style_Proj1.css">
+
+<body>
+
+</body>
+<h1> Video Game Archive </h1>
+<style>
+    @font-face { font-family: FinkHeavy; src: url('FinkHeavy Regular.ttf'); } 
+      h1 {font-family: FinkHeavy}
+</style>
+<h4>
+  welcome to my video game archive! click on a villager icon below to get started!
+</h4>
+<style>
+  @font-face { font-family: FOT-Seurat Pro B; src: url('FOT-Seurat Pro B.otf'); } 
+      h4 {font-family: FOT-Seurat Pro B}
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.column{
+  float:left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+  padding-top: 400px;
+}
+</style>
 
 
+<div class="row">
+  <div class="column">
+    <img src="images\AC_fauna_icon.png" 
+  alt="fauna animal crossing icon" 
+  style="width:250px; height:290px;"
+  class="fauna">
+  </div>
+  <div class="column">
+     <img src="images\AC_gala_icon.png"
+  alt="gala animal crossing icon" 
+  style="width:220px; height:280px;"
+  class="gala">
+  </div>
 
-
-
+</div>
 
 </html>
