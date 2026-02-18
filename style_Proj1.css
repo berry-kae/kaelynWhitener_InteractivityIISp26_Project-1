@@ -5,26 +5,68 @@ body{
     background-size: cover;}
 
 h1{color:rgb(251, 209, 59);
-    font-size: 90px;
+    font-size: 105px;
     text-shadow: 1px 0.5px #783903;
     text-align: center;
     padding-top: 50px;
     }
-h4{color:rgb(251, 165, 59);
-    font-size: 16px;
+h4{color: aliceblue;
+    font-size: 20px;
+    text-shadow: 1px 0.5px #783903;
+    text-align: center;
+    padding-bottom: 5px;
+    } 
+h3{color:rgb(246, 178, 94);
+    font-size: 14px;
     text-shadow: 1px 0.5px #783903;
     text-align: center;
     padding-bottom: 5px;
     } 
 
-.fauna{
+.row{font-family: FOT-Seurat Pro B;}
+.row p {color: aliceblue;
+        font-size: 17px;
+        margin: 10px;
+        margin-left: 170px;
+}
+.sandbox p{
+  margin-left: 135px;
+}
+.horror p{
+  margin-left: 180px;
+}
+.summary{animation-name: waveTitle;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+}
+@keyframes waveTitle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+
+}
+
+.cherry{
   display: block;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 100px;
   width: 50%;
 }
-.gala{
+.cherry{
+  margin-left: 150px;
+}
+.gloria{
+  display: block;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  width: 50%;
+}
+.lucky{
   display: block;
   margin-left: 100px;
   margin-right: 100px;
@@ -41,7 +83,7 @@ h2{color:rgb(251, 209, 59);
     }
 strong{
   color:aliceblue;
-  font-size: 25px;
+  font-size: 21px;
   text-shadow: 1px 0.9px #000000;
 }
 
@@ -51,16 +93,18 @@ p{
   font-size: 17px;
 }
 
-
-figure{display: inline-block;
+figure{display: flex;
     width: 40%; 
-    padding-bottom: 13%; 
+    padding-bottom: 10px; 
     padding-top: 2%;    
     box-sizing: border-box; 
-    margin-left: 5px;
+    margin-left: 80px;
     margin-right: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
+figure img{margin:10px;}
+figure figcaption{text-align: left; margin: 10px;}
+
 .content { 
     clear: both; 
     text-align: center; 
@@ -68,18 +112,15 @@ figure{display: inline-block;
     margin-right: auto;
 } 
 
-figure img{margin:auto;}
-figure figcaption{text-align: left;} 
-
 .container {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: right;
 }
 .image {
-  display: block;
-  width: 100%;
+  display: flex;
+  width: auto;
   height: auto;
 }
 .overlay {
@@ -110,11 +151,38 @@ figure figcaption{text-align: left;}
   text-align: center;
 }
 .text {font-family: FOT-Seurat Pro B;}
-a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
+
+
+.secondrow {
+  margin-left: 25px;
+}
+
+/* button stuff */
+
+.button {
+  border: 2px solid;
+  background-color: rgb(252, 223, 120);
+  color:rgb(251, 165, 59);
+  text-shadow: 1px 1px #783903;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button {font-family: FOT-Seurat Pro B;}
+
+a:link{
+  color:rgb(251, 165, 59);
+}
+a:visited{
+  color:rgb(251, 165, 59);
+}
+.buttoncontainer{
+  height: 200px;
+  position: relative;
+  margin-left: 680px;
 }
